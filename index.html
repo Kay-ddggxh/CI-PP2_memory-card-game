@@ -6,23 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font awesome kit link -->
+    <script src="https://kit.fontawesome.com/f026990e6c.js" crossorigin="anonymous"></script>
     <title>Beat Saitama!</title>
 </head>
 
 <body>
     <!-- header element with page heading and sound ON/OFF button -->
-    <header>
+    <header class="flex">
         <div class="heading">
             <h1>Beat Saitama!</h1>
             <h2>A One Punch Man Memory Card Game</h2>
         </div>
-        <div class="sound-toggle"></div>
+        <div class="sound-toggle">
+            <i class="fa-solid fa-music"></i>
+        </div>
     </header>
-    <main>
+    <main class="flex">
         <!-- game playing area with grid of cards -->
-        <div class="game-area"></div>
+        <div class="game-area grid"></div>
         <!-- score area with timer, move counter and best score keeper -->
-        <div class="score-area"></div>
+        <div class="score-area">
+            <h3 class="score-heading">Your scores:</h3>
+            <div class="score-display">
+                <h4>Time:</h4><span id="timer">01:00</span>
+                <br>
+                <h4>Moves:</h4><span id="move-counter">6</span>
+                <br>
+                <h4>Best score:</h4><span id="best-score">54</span>
+            </div>
+        </div>
     </main>
     <script src="assets/js/script.js"></script>
 </body>

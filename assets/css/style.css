@@ -5,3 +5,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* general styling */
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h4 {
+    display: inline;
+}
+
+/* utitliy classes */
+
+.flex {
+    display: flex;
+}
+
+.gird {
+    display: grid;
+}
