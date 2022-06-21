@@ -68,6 +68,13 @@ h4 {
     position: absolute;
     border-radius: 5px;
     background: #980000;
+    backface-visibility: hidden;
+    /* hide back when flipped first */
+}
+
+.front {
+    transform: rotateY(180deg);
+    /* show front when flipped first */
 }
 
 /* flip functionality styling */
