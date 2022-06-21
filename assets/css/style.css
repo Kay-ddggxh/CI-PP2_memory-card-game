@@ -31,13 +31,14 @@ h4 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 /* game styling */
 
-img {
-    height: 280px;
-    width: 140px;
-    content: normal;
+.game-area {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
