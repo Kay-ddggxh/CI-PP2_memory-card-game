@@ -23,10 +23,21 @@ h4 {
 
 /* utitliy classes */
 
+
+
 .flex {
     display: flex;
 }
 
-.gird {
+.grid {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* game styling */
+
+img {
+    height: 280px;
+    width: 140px;
+    content: normal;
 }
