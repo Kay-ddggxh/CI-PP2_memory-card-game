@@ -1,10 +1,19 @@
 // retrieve all Elements with class attr of "card"
 const cards = document.querySelectorAll('.card');
-console.log(cards);
+
+// manage flip state
+let hasFlippedCard = false;
+let firstCard;
+let secondCard;
 
 function flipCard() {
-    console.log("card flipped");
-    this.classList.toggle('flip'); // append class of "flip" to all items of cards array
+    // this refers to respective div.card element
+    this.classList.add('flip'); // append class of "flip" to all items of cards array
+
+    if (!hasFlippedCard) {
+        hasFlippedCard = true;
+        firstCard = this;
+    }
 }
 
 // add event listener to each item of cards array
