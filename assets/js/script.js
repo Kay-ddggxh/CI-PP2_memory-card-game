@@ -13,7 +13,36 @@ function flipCard() {
     if (!hasFlippedCard) {
         hasFlippedCard = true;
         firstCard = this;
+        return;
     }
+
+    secondCard = this;
+    hasFlippedCard = false;
+
+    checkForMatch();
+}
+// find matching cards
+function checkForMatch() {
+    if (firstCard.dataset.framework === secondCard.dataset.framework) {
+        disableCards();
+        return;
+    }
+
+    unflipCards();
+}
+
+// prevent matched cards from unflipping
+function disableCards() {
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+}
+
+//turn unmatching cards back after 1.5s
+function unflipCards() {
+    setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+    }, 1500);
 }
 
 // add event listener to each item of cards array
