@@ -3,10 +3,14 @@ const cards = document.querySelectorAll('.card');
 
 // manage flip state
 let hasFlippedCard = false;
+let lockBoard = false;
 let firstCard;
 let secondCard;
 
 function flipCard() {
+    // prevent more than 2 cards from flipping at the same time
+    if (lockBoard) return;
+
     // this refers to respective div.card element
     this.classList.add('flip'); // append class of "flip" to all items of cards array
 
@@ -39,9 +43,13 @@ function disableCards() {
 
 //turn unmatching cards back after 1.5s
 function unflipCards() {
+
+    lockBoard = true;
+
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
+        lockBoard = false;
     }, 1500);
 }
 
