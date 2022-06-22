@@ -1,11 +1,48 @@
 // retrieve all Elements with class attr of "card"
 const cards = document.querySelectorAll('.card');
 
+// retrieve timer element
+const timerEl = document.getElementById("timer");
+
+// retrieve start btn element + add click event
+const startBtn = document.getElementById("start-btn");
+startBtn.addEventListener("click", startTimer)
+
+
 // manage flip state
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard;
 let secondCard;
+
+
+// store elapsed time from timer
+let timerInterval;
+
+// timer function
+function startTimer() {
+    // clear existing timer
+    clearInterval(timerInterval);
+
+    let seconds = 0;
+    let minutes = 0;
+
+    // set interval every 1000ms
+    timerInterval = setInterval(function () {
+        // 2-digit representation
+        timerEl.innerHTML =
+            (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds);
+
+        seconds++;
+
+        // increment minutes after 60s, reset seconds
+        if (seconds === 60) {
+            minutes++;
+            seconds = 0;
+        }
+    }, 1000);
+};
+
 
 
 function flipCard() {
