@@ -86,6 +86,18 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
 
 ## Credits
 
+### Media
+
+**Images:**
+
+- *angry:* https://onepunchman.fandom.com/wiki/Saitama_vs._Mosquito?file=Pissedtama_Anime.png
+- *bargain-sale*: https://onepunchman.fandom.com/wiki/Saitama_vs._Subterranean_King?file=Saitama_when_knowing_he_will_miss_a_bargain_sale.png#Battle
+- *card-back*: https://www.logolynx.com/topic/one+punch+man
+- *confused-look*: https://winteriscoming.net/2022/06/14/fast-furious-director-making-live-action-one-punch-man-movie/
+- *earth*: https://onepunchman.fandom.com/wiki/Saitama_vs._Mosquito?file=Saitama_watching_the_Earth_from_the_Moon.png
+- *naked*: https://onepunchman.fandom.com/wiki/Saitama_vs._Mosquito?file=Naked_saitama.png
+- *punch-face*: https://www.giantfreakinrobot.com/ent/one-punch-man-justin-lin.html
+
 ### Code
 
 - [Memory Card Game](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
