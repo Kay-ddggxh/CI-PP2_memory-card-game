@@ -7,9 +7,12 @@ let lockBoard = false;
 let firstCard;
 let secondCard;
 
+
 function flipCard() {
     // prevent more than 2 cards from flipping at the same time
     if (lockBoard) return;
+    // check if current clicked card is equal to first card
+    if (this === firstCard) return;
 
     // this refers to respective div.card element
     this.classList.add('flip'); // append class of "flip" to all items of cards array
@@ -21,7 +24,6 @@ function flipCard() {
     }
 
     secondCard = this;
-    hasFlippedCard = false;
 
     checkForMatch();
 }
@@ -39,6 +41,8 @@ function checkForMatch() {
 function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
+
+    resetBoard();
 }
 
 //turn unmatching cards back after 1.5s
@@ -49,8 +53,16 @@ function unflipCards() {
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
-        lockBoard = false;
+        resetBoard();
     }, 1500);
+}
+
+// reset firstCard and secondCard after each round
+function resetBoard() {
+    hasFlippedCard = false;
+    lockBoard = false;
+    firstCard = null;
+    secondCard = null;
 }
 
 // add event listener to each item of cards array

@@ -10,9 +10,13 @@ Link to [wireframes](https://www.figma.com/file/ZL7CYHIYrd1EM1fCKRbv8f/Untitled?
 
 ### Code
 
+- [Memory Card Game](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
+
 - [HTML data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
 
 - [JavaScript setTimeout() method](https://www.w3schools.com/jsref/met_win_settimeout.asp)
+
+- [JavaScript destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 ### Styling effects and animations
 - [CSS perspective property](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective)
