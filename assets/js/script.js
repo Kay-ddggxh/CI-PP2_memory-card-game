@@ -43,8 +43,6 @@ function startTimer() {
     }, 1000);
 };
 
-
-
 function flipCard() {
     // prevent more than 2 cards from flipping at the same time
     if (lockBoard) return;
