@@ -65,6 +65,14 @@ function resetBoard() {
     secondCard = null;
 }
 
+// shuffle cards when loading using IIFE
+(function shuffle() {
+    for (let card of cards) {
+        let ramdomPos = Math.floor(Math.random() * 12);
+        card.style.order = ramdomPos;
+    };
+})();
+
 // add event listener to each item of cards array
 for (let card of cards) {
     card.addEventListener('click', flipCard)

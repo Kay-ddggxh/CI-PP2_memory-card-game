@@ -14,9 +14,13 @@ Link to [wireframes](https://www.figma.com/file/ZL7CYHIYrd1EM1fCKRbv8f/Untitled?
 
 - [HTML data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
 
+- [Flex order property](https://marina-ferreira.github.io/tutorials/css/flexbox/#order)
+
 - [JavaScript setTimeout() method](https://www.w3schools.com/jsref/met_win_settimeout.asp)
 
 - [JavaScript destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
+- [JavaScript IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
 ### Styling effects and animations
 - [CSS perspective property](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective)
