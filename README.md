@@ -36,6 +36,14 @@ The site contains all necessary features of a simple, functioning memory card ga
 
 ### Possible Future Features
 
+## UX
+
+### Site Goals
+
+The goal of the site is to provide the fan community of One Punch Man with an enterning yet not too complicated game, featuring images of the anime series.
+
+The game is intended to be played over the course of a few minutes. It does not take up too much of the user's time either by playing or learning the rules and functionality.
+
 ## Credits
 
 ### Code
