@@ -10,6 +10,8 @@ Link to [live site](https://kathrin-ddggxh.github.io/CI-PP2_memory-card-game/)
 
 - [Features](#features)
 
+- [UX](#ux)
+
 - [Credits](#credits)
 
 ## Design
@@ -43,6 +45,44 @@ The site contains all necessary features of a simple, functioning memory card ga
 The goal of the site is to provide the fan community of One Punch Man with an enterning yet not too complicated game, featuring images of the anime series.
 
 The game is intended to be played over the course of a few minutes. It does not take up too much of the user's time either by playing or learning the rules and functionality.
+
+### User Stories
+
+**As a site visitor I want to:**
+
+**As the site administrator I want to:**
+
+
+## Testing
+
+### Validator Testing
+
+### Browser Testing
+
+### Manual Testing
+
+### Testing User Stories
+
+### Fixed bugs
+
+### Unfixed bugs
+
+## Deployment
+
+This site was deployed via GitHub pages using the following steps:
+- From the GitHub repository, navigate to **Settings**
+- In the left-hand navigation section select **Pages**
+- From the source section drop-down menu change Branch from **none** to **main** and click the **Save**
+- After several minutes the website is live and will be automatically refreshed with each Git push command.
+
+The link to the live site is: https://kathrin-ddggxh.github.io/CI-PP2_memory-card-game/ 
+
+To run locally:
+- Log into GitHub and click on repository to download ([CI-PP2_memory-card-game](https://github.com/Kathrin-ddggxh/CI-PP2_memory-card-game))
+- Select **Code** and click "Download the Zip file.
+- Once download is completed, extract ZIP file and use in your local environment.
+
+Alternatively you can **Clone** or **Fork** this repository into your GitHub account.
 
 ## Credits
 
