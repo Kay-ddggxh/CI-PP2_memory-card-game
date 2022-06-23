@@ -8,6 +8,10 @@ const timerEl = document.getElementById("timer");
 const startBtn = document.getElementById("start-btn");
 startBtn.addEventListener("click", startTimer)
 
+// retrieve test div
+const testEl = document.getElementById("test");
+
+
 
 // manage flip state
 let hasFlippedCard = false;
@@ -18,6 +22,8 @@ let secondCard;
 
 // store elapsed time from timer
 let timerInterval;
+// second counter for score calculation
+let secCounter = 0;
 
 // timer function
 function startTimer() {
@@ -29,6 +35,10 @@ function startTimer() {
 
     // set interval every 1000ms
     timerInterval = setInterval(function () {
+        // count seconds each interval
+        secCounter++;
+        testEl.innerText = secCounter - 1;
+
         // 2-digit representation
         timerEl.innerHTML =
             (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds);

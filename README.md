@@ -100,6 +100,8 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
 
 ### Code
 
+#### Functionality
+
 - [Memory Card Game](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
 
 - [Timer functionality](https://daily-dev-tips.com/posts/vanilla-javascript-timer/)
@@ -114,6 +116,10 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
 
 - [JavaScript IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
-### Styling effects and animations
+#### Styling effects and animations
 - [CSS perspective property](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective)
 - [CSS transform-style Property](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)
+
+### Content
+- Fonts were taken from [Google fonts](https://fonts.google.com/)
+- Social media icons were taken from [Font Awesome](https://fontawesome.com/icons)
