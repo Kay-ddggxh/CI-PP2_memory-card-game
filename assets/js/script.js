@@ -8,6 +8,9 @@ const timerEl = document.getElementById("timer");
 const startBtn = document.getElementById("start-btn");
 startBtn.addEventListener("click", startTimer)
 
+// retrieve move counter element
+const moveCounter = document.getElementById("move-counter");
+
 // retrieve test div
 const testEl = document.getElementById("test");
 
@@ -24,6 +27,8 @@ let secondCard;
 let timerInterval;
 // second counter for score calculation
 let secCounter = 0;
+// store number of moves
+let numMoves = 0;
 
 // timer function
 function startTimer() {
@@ -54,6 +59,10 @@ function startTimer() {
 };
 
 function flipCard() {
+    // count moves
+    numMoves++;
+    moveCounter.innerHTML = numMoves;
+
     // prevent more than 2 cards from flipping at the same time
     if (lockBoard) return;
     // check if current clicked card is equal to first card
