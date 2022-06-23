@@ -42,7 +42,7 @@ function startTimer() {
     timerInterval = setInterval(function () {
         // count seconds each interval
         secCounter++;
-        testEl.innerText = secCounter - 1;
+        testEl.innerHTML = secCounter - 1;
 
         // 2-digit representation
         timerEl.innerHTML =
@@ -131,3 +131,5 @@ function resetBoard() {
 for (let card of cards) {
     card.addEventListener('click', flipCard)
 }
+
+// Score calculation: (10000 - numMoves) / secCounter 
