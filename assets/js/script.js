@@ -13,6 +13,9 @@ const moveCounter = document.getElementById("move-counter");
 // retrieve score element
 const scoreEl = document.getElementById("score");
 
+// retrieve best score element
+const bestScoreEl = document.getElementById("best-score");
+
 // retrieve test div
 const testEl = document.getElementById("test");
 
@@ -50,7 +53,23 @@ function calcScore() {
     scoreEl.innerHTML = score;
     // stores all scores in bestScore array
     bestScores.push(score);
+
+    getBestScore();
 };
+
+// gets and displays highest number from bestScores array
+function getBestScore() {
+    let maxScore = bestScores[0];
+
+    for (let i = 0; i < bestScores.length; i++) {
+        if (maxScore < bestScores[i]) {
+            maxScore = bestScores[i];
+        }
+    }
+
+    bestScoreEl.innerHTML = maxScore;
+
+}
 
 // timer function
 function startTimer() {
@@ -167,6 +186,7 @@ function stopGame() {
     clearInterval(timerInterval);
 
     calcScore();
+
 }
 
 // add event listener to each item of cards array
