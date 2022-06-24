@@ -98,6 +98,7 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
 - *naked*: https://onepunchman.fandom.com/wiki/Saitama_vs._Mosquito?file=Naked_saitama.png
 - *punch-face*: https://www.giantfreakinrobot.com/ent/one-punch-man-justin-lin.html
 - *background*: https://wall.alphacoders.com/tag/4k-saitama-%28one%E2%80%93punch-man%29-wallpapers 
+- *favicon*: https://read1.mangaonepunch.com/
 
 **Audio**
 
@@ -126,6 +127,7 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
 #### Styling effects and animations
 - [CSS perspective property](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective)
 - [CSS transform-style Property](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)
+- [Text colour gradient](https://css-tricks.com/snippets/css/gradient-text/)
 
 ### Content
 **Fonts** 
