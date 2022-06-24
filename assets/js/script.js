@@ -6,13 +6,18 @@ const timerEl = document.getElementById("timer");
 
 // retrieve start btn element + add click event
 const startBtn = document.getElementById("start-btn");
-startBtn.addEventListener("click", startTimer)
 
 // retrieve move counter element
 const moveCounter = document.getElementById("move-counter");
 
+// retrieve score element
+const scoreEl = document.getElementById("score");
+
 // retrieve test div
 const testEl = document.getElementById("test");
+
+// retrieve stop btn element
+const stopBtn = document.getElementById("stop-btn");
 
 
 
@@ -30,13 +35,34 @@ let secCounter = 0;
 // store number of moves
 let numMoves = 0;
 
+
+// store scores
+let bestScores = []
+
+// store times 
+let bestTimes = [];
+
+
+// calculate scores
+function calcScore() {
+    let score = Math.round((10000 - numMoves) / secCounter);
+    // displays current score 
+    scoreEl.innerHTML = score;
+    // stores all scores in bestScore array
+    bestScores.push(score);
+};
+
 // timer function
 function startTimer() {
     // clear existing timer
     clearInterval(timerInterval);
+    // resets second counter to 0
+    secCounter = 0;
 
     let seconds = 0;
     let minutes = 0;
+    // stores time ellapsed during round
+    let time;
 
     // set interval every 1000ms
     timerInterval = setInterval(function () {
@@ -127,9 +153,33 @@ function resetBoard() {
     };
 })();
 
+// render entire game
+function startGame() {
+    // reset move counter to 0
+    numMoves = 0;
+
+    startTimer();
+}
+
+// stop game > stops timer and stores time and score
+function stopGame() {
+    // stops timer from running
+    clearInterval(timerInterval);
+
+    calcScore();
+}
+
 // add event listener to each item of cards array
 for (let card of cards) {
     card.addEventListener('click', flipCard)
 }
+
+// if all cards flipped > run stopGame()
+
+// add event listener to start button
+startBtn.addEventListener("click", startGame)
+
+// add event listener to stop button
+stopBtn.addEventListener("click", stopGame)
 
 // Score calculation: (10000 - numMoves) / secCounter 
