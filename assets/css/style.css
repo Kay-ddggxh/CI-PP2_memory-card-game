@@ -23,11 +23,17 @@
 /* general styling */
 
 body {
+    color: #fff;
     font-family: 'Bangers', cursive;
     letter-spacing: 2px;
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    background-image: linear-gradient(rgb(62 62 62), rgb(0 0 0 / 30%)),
+        url(../images/background.jpg);
+    background-repeat: none;
+    background-size: cover;
+    resize: both;
 }
 
 main {
