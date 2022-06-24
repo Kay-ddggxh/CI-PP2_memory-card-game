@@ -111,6 +111,8 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
 
 - [Timer functionality](https://daily-dev-tips.com/posts/vanilla-javascript-timer/)
 
+- [Soundtrack toggle](https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
+
 - [HTML data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
 
 - [Flex order property](https://marina-ferreira.github.io/tutorials/css/flexbox/#order)
