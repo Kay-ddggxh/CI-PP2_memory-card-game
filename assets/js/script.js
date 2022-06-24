@@ -204,4 +204,29 @@ startBtn.addEventListener("click", startGame)
 // add event listener to stop button
 stopBtn.addEventListener("click", stopGame)
 
-// Score calculation: (10000 - numMoves) / secCounter 
+
+// soundtrack on/off toggle
+
+const soundtrackEl = document.getElementById("soundtrack");
+const audioToggle = document.getElementById("audio-toggle");
+
+const playIcon = document.getElementById("play-icon");
+const pauseIcon = document.getElementById("pause-icon");
+let isPlaying = false;
+pauseIcon.style.display = "none";
+
+function togglePlay() {
+    isPlaying ? soundtrackEl.pause() : soundtrackEl.play();
+}
+
+soundtrackEl.onplaying = function () {
+    isPlaying = true;
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "inline";
+}
+soundtrackEl.onpause = function () {
+    isPlaying = false;
+    playIcon.style.display = "inline";
+    pauseIcon.style.display = "none";
+}
+audioToggle.addEventListener("click", togglePlay);

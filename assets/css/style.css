@@ -29,6 +29,8 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    background-image: linear-gradient(rgb(65, 65, 65), rgb(24, 24, 24));
+    /* in case bg-img can't load */
     background-image: linear-gradient(rgb(62 62 62), rgb(0 0 0 / 30%)),
         url(../images/background.jpg);
     background-repeat: none;
@@ -48,6 +50,10 @@ main {
 
 /* header styling */
 
+header {
+    justify-content: space-between;
+}
+
 h1 {
     font-family: 'wild_worldbold';
     font-size: 3.5rem;
@@ -62,11 +68,30 @@ h2 {
     margin-top: 1em;
 }
 
+/*  sound toggle styling */
+
+.sound-toggle {
+    align-self: center;
+}
+
+.sound-btn {
+    font-size: 3rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+/* .play-icon {}
+
+.pause-icon {
+    display: none;
+} */
+
 
 /* game styling */
 
 .game-area {
-    width: 100%;
+    width: 100vw;
     height: 80vh;
     margin: auto;
     display: flex;
@@ -132,6 +157,7 @@ h4 {
 
 .score-heading {
     font-family: 'wild_worldbold';
+    margin-top: 2em;
 }
 
 .score-display-item {

@@ -26,7 +26,7 @@ The first [wireframes in Figma](https://www.figma.com/file/ZL7CYHIYrd1EM1fCKRbv8
 
 ### Font and Colour choices
 
-**Fonts:** Fonts were chosen to match the style of the One Punch Man manga as closely as possible.
+**Fonts:** Fonts were chosen to match the style of the One Punch Man manga as closely as possible. 
 
 **Colours:** The main colour scheme follows the design of the anime, maintaining a dark mood based on the main red colour found in Saitama's (One Punch Man protagonist) cape, gloves and boots.
 
@@ -97,6 +97,11 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
 - *earth*: https://onepunchman.fandom.com/wiki/Saitama_vs._Mosquito?file=Saitama_watching_the_Earth_from_the_Moon.png
 - *naked*: https://onepunchman.fandom.com/wiki/Saitama_vs._Mosquito?file=Naked_saitama.png
 - *punch-face*: https://www.giantfreakinrobot.com/ent/one-punch-man-justin-lin.html
+- *background*: https://wall.alphacoders.com/tag/4k-saitama-%28one%E2%80%93punch-man%29-wallpapers 
+
+**Audio**
+
+- *soundtrack:* https://www.youtube.com/watch?v=rW7OB_HDCGQ&ab_channel=THESAMO
 
 ### Code
 
@@ -121,5 +126,13 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
 - [CSS transform-style Property](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)
 
 ### Content
-- Fonts were taken from [Google fonts](https://fonts.google.com/)
-- Social media icons were taken from [Font Awesome](https://fontawesome.com/icons)
+**Fonts** 
+
+*"Bangers":* [Google fonts](https://fonts.google.com/)
+
+*"wild_world":* [Abdullah Mosad](https://befonts.com/wild-world-font.html) (License: Free for Commercial Use); converted into web font kit with [Fontsquirrel](https://www.fontsquirrel.com/tools/webfont-generator) 
+
+
+**Icons** 
+
+All icons were taken from [Font Awesome](https://fontawesome.com/icons)
