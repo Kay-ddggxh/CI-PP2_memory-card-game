@@ -38,13 +38,8 @@ let secCounter = 0;
 // store number of moves
 let numMoves = 0;
 
-
 // store scores
-let bestScores = []
-
-// store times 
-let bestTimes = [];
-
+let bestScores = [];
 
 // calculate scores
 function calcScore() {
@@ -195,6 +190,13 @@ for (let card of cards) {
 }
 
 // if all cards flipped > run stopGame()
+
+// for (let card of cards) {
+//     if (card.classList.contains("flip")) {
+//         stopGame();
+//     }
+// }
+
 
 // add event listener to start button
 startBtn.addEventListener("click", startGame)

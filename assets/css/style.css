@@ -23,34 +23,45 @@
 /* general styling */
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-h1 {
-    font-family: 'wild_worldbold';
-}
-
-h4 {
-    display: inline;
+main {
+    margin: 2rem;
 }
 
 /* utitliy classes */
-
-
 
 .flex {
     display: flex;
 }
 
-.grid {
-    display: grid;
+/* header styling */
+
+h1 {
+    font-family: 'wild_worldbold';
+    font-size: 3.5rem;
 }
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h1,
+h2 {
+    margin-top: 1em;
+}
+
 
 /* game styling */
 
 .game-area {
-    width: 640px;
-    height: 640px;
+    width: 100%;
+    height: 80vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -102,6 +113,25 @@ h4 {
 
 /* score area styling */
 
+h4 {
+    display: inline;
+}
+
+.score-area {
+    width: 100%;
+    margin-right: 2em;
+    text-align: right;
+    font-size: 2rem;
+}
+
 .score-heading {
     font-family: 'wild_worldbold';
+}
+
+.score-display-item {
+    margin: .5em 0;
+}
+
+.counter {
+    margin-left: .6em;
 }

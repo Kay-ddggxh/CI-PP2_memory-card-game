@@ -15,7 +15,7 @@
     <!-- header element with page heading and sound ON/OFF button -->
     <header class="flex">
         <div class="heading">
-            <h1>One Punch Game</h1>
+            <h1>One Punch Match</h1>
             <h2>A One Punch Man Memory Card Game</h2>
         </div>
         <div class="sound-toggle">
@@ -78,15 +78,20 @@
 
         <!-- score area with timer, move counter and best score keeper -->
         <section class="score-area">
-            <h3 class="score-heading">Your scores:</h3>
             <div class="score-display">
-                <h4>Time:</h4><span id="timer">00:00</span>
-                <br>
-                <h4>Moves:</h4><span id="move-counter">0</span>
-                <br>
-                <h4>Score:</h4><span id="score">0</span>
-                <br>
-                <h4>Best score:</h4><span id="best-score">0</span>
+                <div class="score-display-item">
+                    <h4>Time:</h4><span class="counter" id="timer">00:00</span>
+                </div>
+                <div class="score-display-item">
+                    <h4>Moves:</h4><span class="counter" id="move-counter">0</span>
+                </div>
+                <h3 class="score-heading">Your scores:</h3>
+                <div class="score-display-item">
+                    <h4>Score:</h4><span class="counter" id="score">0</span>
+                </div>
+                <div class="score-display-item">
+                    <h4>Best score:</h4><span class="counter" id="best-score">0</span>
+                </div>
             </div>
             <button id="start-btn">Start Game</button>
             <br>
