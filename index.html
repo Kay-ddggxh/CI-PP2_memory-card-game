@@ -87,18 +87,22 @@
         <!-- score area with timer, move counter and best score keeper -->
         <section class="score-area">
             <div class="score-display">
-                <div class="score-display-item">
-                    <h4>Time:</h4><span class="counter" id="timer">00:00</span>
+                <div class="time-moves">
+                    <div class="score-display-item">
+                        <h4>Time:</h4><span class="counter" id="timer">00:00</span>
+                    </div>
+                    <div class="score-display-item">
+                        <h4>Moves:</h4><span class="counter" id="move-counter">0</span>
+                    </div>
                 </div>
-                <div class="score-display-item">
-                    <h4>Moves:</h4><span class="counter" id="move-counter">0</span>
-                </div>
-                <h3 class="score-heading">Your scores:</h3>
-                <div class="score-display-item">
-                    <h4>Score:</h4><span class="counter" id="score">0</span>
-                </div>
-                <div class="score-display-item">
-                    <h4>Best score:</h4><span class="counter" id="best-score">0</span>
+                <div class="scores">
+                    <h3 class="score-heading">Your scores:</h3>
+                    <div class="score-display-item">
+                        <h4>Score:</h4><span class="counter" id="score">0</span>
+                    </div>
+                    <div class="score-display-item">
+                        <h4>Best score:</h4><span class="counter" id="best-score">0</span>
+                    </div>
                 </div>
             </div>
             <button id="start-btn">Start Game</button>

@@ -43,7 +43,7 @@ body {
 }
 
 main {
-    margin: 2rem;
+    margin: 2rem 0;
 }
 
 /* utitliy classes */
@@ -182,4 +182,84 @@ h4 {
 
 .counter {
     margin-left: .6em;
+}
+
+/* media queries */
+
+@media (max-width: 1000px) {
+    .card {
+        width: calc(33.333% - 10px);
+        height: calc(25% - 10px);
+    }
+}
+
+/* medium screens */
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 14px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    /* score area styling for medium screens */
+
+    .score-display {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .score-heading {
+        margin-top: .5em;
+    }
+
+    /* game area styling for medium screens */
+
+    .game-area {
+        width: 90vw;
+        height: 100vh;
+        gap: 10px;
+        margin-right: -40px;
+    }
+
+    .card {
+        width: calc(33.333% - 50px);
+        height: calc(25% - 10px);
+    }
+
+}
+
+/* small screens */
+
+@media (max-width: 440px) {
+
+    /* header styling for small screens */
+
+    h1,
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /* score area styling for small screens */
+
+    .score-area {
+        font-size: 1.3rem;
+    }
+
+    /* game area styling for small screens */
+
+    .game-area {
+        width: 90vw;
+        height: 100vh;
+        gap: 00px;
+        margin-right: -40px;
+    }
+
+    .card {
+        width: calc(33.333% - 20px);
+        height: calc(25% - 10px);
+    }
 }

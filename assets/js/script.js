@@ -204,8 +204,7 @@ startBtn.addEventListener("click", startGame)
 // add event listener to stop button
 stopBtn.addEventListener("click", stopGame)
 
-
-// soundtrack on/off toggle
+// ======== soundtrack on/off toggle =======
 
 const soundtrackEl = document.getElementById("soundtrack");
 const audioToggle = document.getElementById("audio-toggle");
