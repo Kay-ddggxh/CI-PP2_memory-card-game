@@ -14,8 +14,23 @@
     <title>Beat Saitama!</title>
 </head>
 
-<body>
-    <!-- header element with page heading and sound ON/OFF button -->
+<body onload="openModal()">
+    <!-- START === modal element -->
+    <!-- <dialog class="modal" id="modal">
+        <h2 class="modal-heading">Let's Go!</h2>
+        <p class="modal-text">Please enter your player name:</p>
+        <form class="modal-form" method="dialog">
+            <label for="player-name"></label>
+            <input id="player-name" name="player-name" class="modal-input" type="text" />
+            <br />
+            <button class="modal-start-btn" id="modal-start-btn" type="submit" aria-label="start game">
+                Start Game
+            </button>
+        </form>
+    </dialog> -->
+    <!-- END === modal element -->
+
+    <!-- START === header element with page heading and sound ON/OFF button -->
     <header class="flex">
         <div class="heading">
             <h1>One Punch Match</h1>
@@ -30,9 +45,10 @@
             </button>
         </div>
     </header>
+    <!-- END === header element with page heading and sound ON/OFF button -->
     <main class="flex">
 
-        <!-- game playing area with grid of cards -->
+        <!-- START === game playing area with grid of cards -->
         <section class="game-area flex">
             <div class="card" data-framework="angry">
                 <img src="assets/images/angry.jpg" alt="Saitama angry face" class="front">
@@ -83,8 +99,9 @@
                 <img src="assets/images/card-back.jpg" alt="card back face" class="back">
             </div>
         </section>
+        <!-- END === game playing area with grid of cards -->
 
-        <!-- score area with timer, move counter and best score keeper -->
+        <!-- START === score area with timer, move counter and best score keeper -->
         <section class="score-area">
             <div class="score-display">
                 <div class="time-moves">
@@ -110,7 +127,10 @@
             <button id="stop-btn">Stop Timer</button>
             <div id="test"></div>
         </section>
+        <!-- END === score area with timer, move counter and best score keeper -->
+
     </main>
+    <!-- START === footer area with social links -->
     <footer>
         <p class="footer-text">
             Thanks for playing! Check the links for the open-source code or find me on social media.
@@ -124,6 +144,8 @@
                     class="fa-brands fa-twitter social-icon"></i></a>
         </div>
     </footer>
+    <!-- END === footer area with social links -->
+
     <script src="assets/js/script.js"></script>
     <noscript>Your browser does not support JavaScript or had JavaScript disabled. You need to enable JavaScript to play
         the game.

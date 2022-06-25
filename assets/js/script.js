@@ -1,3 +1,9 @@
+//retrieve modal element
+const modal = document.getElementById("modal");
+
+// retrieve modal start game button
+const modalStartBtn = document.getElementById("modal-start-btn");
+
 // retrieve all Elements with class attr of "card"
 const cards = document.querySelectorAll('.card');
 
@@ -204,6 +210,7 @@ startBtn.addEventListener("click", startGame)
 // add event listener to stop button
 stopBtn.addEventListener("click", stopGame)
 
+
 // ======== soundtrack on/off toggle =======
 
 const soundtrackEl = document.getElementById("soundtrack");
@@ -229,3 +236,16 @@ soundtrackEl.onpause = function () {
     pauseIcon.style.display = "none";
 }
 audioToggle.addEventListener("click", togglePlay);
+
+
+// ========= modal functionalitiy ==============
+
+// function openModal() {
+//     modal.showModal();
+// }
+
+// function closeModal() {
+//     modal.close();
+// }
+
+// modalStartBtn.addEventListener("click", closeModal)
