@@ -138,7 +138,6 @@ function checkForMatch() {
         disableCards();
         if (matchCounter === (cards.length / 2)) {
             stopGame();
-            console.log("win")
         }
     } else {
         // cards don't match
@@ -204,21 +203,8 @@ for (let card of cards) {
     card.addEventListener('click', flipCard)
 }
 
-// if all cards flipped > run stopGame()
-
-// for (let card of cards) {
-//     if (card.classList.contains("flip")) {
-//         stopGame();
-//     }
-// }
-
-
 // add event listener to start button
 startBtn.addEventListener("click", startGame)
-
-// add event listener to stop button
-stopBtn.addEventListener("click", stopGame)
-
 
 // ======== soundtrack on/off toggle =======
 
