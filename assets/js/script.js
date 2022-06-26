@@ -129,7 +129,7 @@ function flipCard() {
 }
 // find matching cards
 function checkForMatch() {
-    if (firstCard.dataset.framework === secondCard.dataset.framework) {
+    if (firstCard.dataset.image === secondCard.dataset.image) {
         disableCards();
         return;
     }
