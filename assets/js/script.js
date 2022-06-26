@@ -16,9 +16,6 @@ const cards = document.querySelectorAll('.card');
 // retrieve timer element
 const timerEl = document.getElementById("timer");
 
-// // retrieve start btn element + add click event
-// const startBtn = document.getElementById("start-btn");
-
 // retrieve move counter element
 const moveCounter = document.getElementById("move-counter");
 
@@ -240,9 +237,6 @@ function stopGame() {
 for (let card of cards) {
     card.addEventListener('click', flipCard)
 }
-
-// add event listener to start button
-// startBtn.addEventListener("click", startGame)
 
 // START ======== soundtrack on/off toggle =======
 
