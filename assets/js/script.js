@@ -4,14 +4,17 @@ const modal = document.getElementById("modal");
 // retrieve modal start game button
 const modalStartBtn = document.getElementById("modal-start-btn");
 
+// retrieve player name
+const playerName = document.getElementById("player-name");
+
 // retrieve all Elements with class attr of "card"
 const cards = document.querySelectorAll('.card');
 
 // retrieve timer element
 const timerEl = document.getElementById("timer");
 
-// retrieve start btn element + add click event
-const startBtn = document.getElementById("start-btn");
+// // retrieve start btn element + add click event
+// const startBtn = document.getElementById("start-btn");
 
 // retrieve move counter element
 const moveCounter = document.getElementById("move-counter");
@@ -48,6 +51,19 @@ let matchCounter = 0;
 
 // store scores
 let bestScores = [];
+
+// ========= modal functionalitiy ==============
+
+function openModal() {
+    modal.showModal();
+}
+
+function closeModal() {
+    modal.close();
+    modal.style.display = "none";
+}
+
+// ======== End - modal functionality ===========
 
 // calculate scores
 function calcScore() {
@@ -187,6 +203,8 @@ function startGame() {
     numMoves = 0;
     moveCounter.innerHTML = numMoves;
 
+    closeModal();
+
     startTimer();
 }
 
@@ -214,9 +232,9 @@ for (let card of cards) {
 }
 
 // add event listener to start button
-startBtn.addEventListener("click", startGame)
+// startBtn.addEventListener("click", startGame)
 
-// ======== soundtrack on/off toggle =======
+// START ======== soundtrack on/off toggle =======
 
 const soundtrackEl = document.getElementById("soundtrack");
 const audioToggle = document.getElementById("audio-toggle");
@@ -242,16 +260,7 @@ soundtrackEl.onpause = function () {
 }
 audioToggle.addEventListener("click", togglePlay);
 
+// END ======== soundtrack on/off toggle =======
 
-// ========= modal functionalitiy ==============
 
-function openModal() {
-    modal.showModal();
-}
-
-function closeModal() {
-    modal.close();
-    modal.style.display = "none"
-}
-
-modalStartBtn.addEventListener("click", closeModal)
+modalStartBtn.addEventListener("click", startGame)
