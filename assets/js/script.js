@@ -25,20 +25,11 @@ const scoreEl = document.getElementById("score");
 // retrieve best score element
 const bestScoreEl = document.getElementById("best-score");
 
-// retrieve test div
-const testEl = document.getElementById("test");
-
-// retrieve stop btn element
-const stopBtn = document.getElementById("stop-btn");
-
-
-
 // manage flip state
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard;
 let secondCard;
-
 
 // store elapsed time from timer
 let timerInterval;
@@ -106,7 +97,6 @@ function startTimer() {
     timerInterval = setInterval(function () {
         // count seconds each interval
         secCounter++;
-        testEl.innerHTML = secCounter - 1;
 
         // 2-digit representation
         timerEl.innerHTML =
