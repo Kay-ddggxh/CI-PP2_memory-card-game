@@ -43,6 +43,8 @@ let timerInterval;
 let secCounter = 0;
 // store number of moves
 let numMoves = 0;
+// count matches to determine when game is finished
+let matchCounter = 0;
 
 // store scores
 let bestScores = [];
@@ -132,7 +134,12 @@ function flipCard() {
 function checkForMatch() {
     if (firstCard.dataset.image === secondCard.dataset.image) {
         // cards match
+        matchCounter += 1;
         disableCards();
+        if (matchCounter === (cards.length / 2)) {
+            stopGame();
+            console.log("win")
+        }
     } else {
         // cards don't match
         unflipCards();
