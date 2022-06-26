@@ -118,23 +118,25 @@ function flipCard() {
     this.classList.add('flip'); // append class of "flip" to all items of cards array
 
     if (!hasFlippedCard) {
+        // first click
         hasFlippedCard = true;
         firstCard = this;
-        return;
+    } else {
+        // second click
+        secondCard = this;
+
+        checkForMatch();
     }
-
-    secondCard = this;
-
-    checkForMatch();
 }
 // find matching cards
 function checkForMatch() {
     if (firstCard.dataset.image === secondCard.dataset.image) {
+        // cards match
         disableCards();
-        return;
+    } else {
+        // cards don't match
+        unflipCards();
     }
-
-    unflipCards();
 }
 
 // prevent matched cards from unflipping
