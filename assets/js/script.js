@@ -4,8 +4,11 @@ const modal = document.getElementById("modal");
 // retrieve modal start game button
 const modalStartBtn = document.getElementById("modal-start-btn");
 
-// retrieve player name
+// retrieve player name element
 const playerName = document.getElementById("player-name");
+
+// retrieve player name input
+const playerNameInput = document.getElementById("player-name-input");
 
 // retrieve all Elements with class attr of "card"
 const cards = document.querySelectorAll('.card');
@@ -202,6 +205,13 @@ function startGame() {
     // reset move counter to 0
     numMoves = 0;
     moveCounter.innerHTML = numMoves;
+
+    // render player name
+    if (playerNameInput.value === "") {
+        playerName.innerHTML = "Your";
+    } else {
+        playerName.innerHTML = `${playerNameInput.value}'s`;
+    }
 
     closeModal();
 
