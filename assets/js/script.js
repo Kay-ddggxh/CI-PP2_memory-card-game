@@ -185,6 +185,7 @@ function resetBoard() {
 function startGame() {
     // reset move counter to 0
     numMoves = 0;
+    moveCounter.innerHTML = numMoves;
 
     startTimer();
 }
@@ -197,6 +198,15 @@ function stopGame() {
     calcScore();
 
 }
+
+// restart game
+// function restartGame() {
+//     // reset move counter to 0
+//     numMoves = 0;
+//     moveCounter.innerHTML = numMoves;
+
+//     startTimer();
+// }
 
 // add event listener to each item of cards array
 for (let card of cards) {
@@ -235,12 +245,13 @@ audioToggle.addEventListener("click", togglePlay);
 
 // ========= modal functionalitiy ==============
 
-// function openModal() {
-//     modal.showModal();
-// }
+function openModal() {
+    modal.showModal();
+}
 
-// function closeModal() {
-//     modal.close();
-// }
+function closeModal() {
+    modal.close();
+    modal.style.display = "none"
+}
 
-// modalStartBtn.addEventListener("click", closeModal)
+modalStartBtn.addEventListener("click", closeModal)
