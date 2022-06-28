@@ -4,6 +4,9 @@ const modal = document.getElementById("modal");
 // retrieve modal start game button
 const modalStartBtn = document.getElementById("modal-start-btn");
 
+// retrieve restart game button
+const restartBtn = document.getElementById("restart-btn");
+
 // retrieve player name element
 const playerName = document.getElementById("player-name");
 
@@ -43,6 +46,8 @@ let matchCounter = 0;
 // store scores
 let bestScores = [];
 
+
+
 // ========= modal functionalitiy ==============
 
 function openModal() {
@@ -64,6 +69,9 @@ function calcScore() {
     // stores all scores in bestScore array
     bestScores.push(score);
 
+    // storing bestScores array in local storage
+    localStorage.setItem("bestScores", JSON.stringify(bestScores));
+
     getBestScore();
 };
 
@@ -72,8 +80,8 @@ function getBestScore() {
     let maxScore = bestScores[0];
 
     for (let i = 0; i < bestScores.length; i++) {
-        if (maxScore < bestScores[i]) {
-            maxScore = bestScores[i];
+        if (maxScore < JSON.parse(localStorage.getItem(bestScores[i]))) {
+            maxScore = JSON.parse(localStorage.getItem(bestScores[i]));
         }
     }
 
@@ -212,16 +220,21 @@ function stopGame() {
 
     calcScore();
 
+    restartBtn.style.display = "block";
+
 }
 
 // restart game
-// function restartGame() {
-//     // reset move counter to 0
-//     numMoves = 0;
-//     moveCounter.innerHTML = numMoves;
 
-//     startTimer();
-// }
+function restartGame() {
+    //hide restart button
+    restartBtn.style.display = "none";
+    // reset move counter to 0
+    numMoves = 0;
+    moveCounter.innerHTML = numMoves;
+
+    startTimer();
+}
 
 // add event listener to each item of cards array
 for (let card of cards) {
@@ -256,5 +269,8 @@ audioToggle.addEventListener("click", togglePlay);
 
 // END ======== soundtrack on/off toggle =======
 
-
+// modal button starts the game and timer
 modalStartBtn.addEventListener("click", startGame)
+
+// restart game button restarts game without reloading the page
+restartBtn.addEventListener("click", restartGame)

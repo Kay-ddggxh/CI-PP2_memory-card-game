@@ -218,6 +218,37 @@ h2 {
     transform: rotateY(180deg);
 }
 
+/* restart game button styling */
+
+.restart-btn {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 4px;
+    max-width: fit-content;
+    margin: 1em auto;
+    padding: .5em .8em;
+    color: #980000;
+    background-color: #EAC066;
+    box-shadow: inset 0px 0px 10px #980000;
+    position: absolute;
+    top: 100vh;
+    left: 30vw;
+    display: none;
+}
+
+.restart-btn:hover {
+    color: #EAC066;
+    background-color: #980000;
+    box-shadow: inset 0px 0px 5px #EAC066;
+}
+
+.restart-btn:active {
+    transform: scale(1.1);
+    transition: ease-in-out 5ms;
+}
+
 /* score area styling */
 
 h4 {
