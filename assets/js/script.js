@@ -188,20 +188,19 @@ function resetBoard() {
     secondCard = null;
 }
 
-// shuffle cards when loading using IIFE
-(function shuffle() {
+// shuffle cards 
+function shuffle() {
     for (let card of cards) {
         let ramdomPos = Math.floor(Math.random() * 12);
         card.style.order = ramdomPos;
     };
-})();
+};
 
 // render entire game
 function startGame() {
+    // shuffle cards
+    shuffle();
 
-    // reset move counter to 0
-    numMoves = 0;
-    moveCounter.innerHTML = numMoves;
 
     // render player name
     if (playerNameInput.value === "") {
@@ -213,6 +212,14 @@ function startGame() {
     closeModal();
 
     startTimer();
+
+    // add event listener to each item of cards array
+    for (let card of cards) {
+        card.addEventListener('click', flipCard);
+    }
+    // reset move counter to 0
+    numMoves = 0;
+    moveCounter.innerHTML = numMoves;
 }
 
 // stop game > stops timer and stores time and score
@@ -223,7 +230,6 @@ function stopGame() {
     calcScore();
 
     restartBtn.style.display = "block";
-
 }
 
 // restart game
@@ -238,17 +244,18 @@ function restartGame() {
     // flip all cards back again
     cards.forEach(card => card.classList.remove('flip'));
 
-    startGame();
+    // set matching cards to 0
+    matchCounter = 0;
 
-    for (let card of cards) {
-        card.addEventListener('click', flipCard);
-    }
+    // reset score to 0
+    scoreEl.innerHTML = 0;
+    startGame();
 }
 
 // add event listener to each item of cards array
-for (let card of cards) {
-    card.addEventListener('click', flipCard);
-}
+// for (let card of cards) {
+//     card.addEventListener('click', flipCard);
+// }
 
 // START ======== soundtrack on/off toggle =======
 
