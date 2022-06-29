@@ -28,6 +28,12 @@ const scoreEl = document.getElementById("score");
 // retrieve best score element
 const bestScoreEl = document.getElementById("best-score");
 
+// retrieve all audio elements
+const soundtrackEl = document.getElementById("soundtrack");
+const audioToggle = document.getElementById("audio-toggle");
+const playIcon = document.getElementById("play-icon");
+const pauseIcon = document.getElementById("pause-icon");
+
 // manage flip state
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -69,11 +75,8 @@ function calcScore() {
     // stores all scores in bestScore array
     bestScores.push(score);
 
-    // storing bestScores array in local storage
-    localStorage.setItem("bestScores", JSON.stringify(bestScores));
-
     getBestScore();
-};
+}
 
 // gets and displays highest number from bestScores array
 function getBestScore() {
@@ -98,8 +101,6 @@ function startTimer() {
 
     let seconds = 0;
     let minutes = 0;
-    // stores time ellapsed during round
-    let time;
 
     // set interval every 1000ms
     timerInterval = setInterval(function () {
@@ -118,7 +119,7 @@ function startTimer() {
             seconds = 0;
         }
     }, 1000);
-};
+}
 
 function flipCard() {
     // count moves
@@ -197,6 +198,7 @@ function resetBoard() {
 
 // render entire game
 function startGame() {
+
     // reset move counter to 0
     numMoves = 0;
     moveCounter.innerHTML = numMoves;
@@ -227,27 +229,29 @@ function stopGame() {
 // restart game
 
 function restartGame() {
+    // storing bestScores array in local storage
+    localStorage.setItem("bestScores", JSON.stringify(bestScores)); // not working!!!
+
     //hide restart button
     restartBtn.style.display = "none";
-    // reset move counter to 0
-    numMoves = 0;
-    moveCounter.innerHTML = numMoves;
 
-    startTimer();
+    // flip all cards back again
+    cards.forEach(card => card.classList.remove('flip'));
+
+    startGame();
+
+    for (let card of cards) {
+        card.addEventListener('click', flipCard);
+    }
 }
 
 // add event listener to each item of cards array
 for (let card of cards) {
-    card.addEventListener('click', flipCard)
+    card.addEventListener('click', flipCard);
 }
 
 // START ======== soundtrack on/off toggle =======
 
-const soundtrackEl = document.getElementById("soundtrack");
-const audioToggle = document.getElementById("audio-toggle");
-
-const playIcon = document.getElementById("play-icon");
-const pauseIcon = document.getElementById("pause-icon");
 let isPlaying = false;
 pauseIcon.style.display = "none";
 
