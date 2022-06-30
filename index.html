@@ -52,90 +52,91 @@
         <section class="game-info">
             <p class="OPM-info">One Punch Who? Beat what now? If you haven't met the under acknowledged hero called
                 Saitama yet, then you better head over to his <a href="https://onepunchman.fandom.com/wiki/Saitama"
-                    target="_blank">Wiki Page</a> to learn more!</p>
-            <h3 class="rules-heading">How to play</h3>
-            <p class="rules-info">Find the matching pairs of cards in the grid below. The less move you make and the
+                    target="_blank" class="OPM-info-link">Wiki Page</a> to learn more!</p>
+            <h3 class="rules-heading" aria-label="One Punch Man Wiki">How to play</h3>
+            <p class="rules-info">Uncover the matching pairs of cards in the grid below. The less moves you make and the
                 quicker you are, the higher your score!</p>
         </section>
         <!-- END === game info area incl. OPM info and game rules -->
 
-        <!-- START === game playing area with grid of cards -->
-        <section class="game-area flex">
-            <div class="card" data-image="angry">
-                <img src="assets/images/angry.jpg" alt="Saitama angry face" class="front">
-                <img src="assets/images/card-back.jpg" alt="card back face" class="back">
-            </div>
-            <div class="card" data-image="angry">
-                <img src="assets/images/angry.jpg" alt="Saitama angry face" class="front">
-                <img src="assets/images/card-back.jpg" alt="card back face" class="back">
-            </div>
-            <div class="card" data-image="bargain">
-                <img src="assets/images/bargain-sale.jpg" alt="Saitama forgot bargain sale" class="front">
-                <img src="assets/images/card-back.jpg" alt="card back face" class="back">
-            </div>
-            <div class="card" data-image="bargain">
-                <img src="assets/images/bargain-sale.jpg" alt="Saitama forgot bargain sale" class="front">
-                <img src="assets/images/card-back.jpg" alt="card back face" class="back">
-            </div>
-            <div class="card" data-image="confused">
-                <img src="assets/images/confused-look.jpg" alt="Saitama looks confused" class="front">
-                <img src="assets/images/card-back.jpg" alt="card back face" class="back">
-            </div>
-            <div class="card" data-image="confused">
-                <img src="assets/images/confused-look.jpg" alt="Saitama looks confused" class="front">
-                <img src="assets/images/card-back.jpg" alt="card back face" class="back">
-            </div>
-            <div class="card" data-image="earth">
-                <img src="assets/images/earth.jpg" alt="Saitama views earth from moon" class="front">
-                <img src="assets/images/card-back.jpg" alt="card back face" class="back">
-            </div>
-            <div class="card" data-image="earth">
-                <img src="assets/images/earth.jpg" alt="Saitama views earth from moon" class="front">
-                <img src="assets/images/card-back.jpg" alt="card back face" class="back">
-            </div>
-            <div class="card" data-image="naked">
-                <img src="assets/images/naked.jpg" alt="Saitama naked" class="front">
-                <img src="assets/images/card-back.jpg" alt="card back face" class="back">
-            </div>
-            <div class="card" data-image="naked">
-                <img src="assets/images/naked.jpg" alt="Saitama naked" class="front">
-                <img src="assets/images/card-back.jpg" alt="card back face" class="back">
-            </div>
-            <div class="card" data-image="punch">
-                <img src="assets/images/punch-face.jpg" alt="Saitama face when punching" class="front">
-                <img src="assets/images/card-back.jpg" alt="card back face" class="back">
-            </div>
-            <div class="card" data-image="punch">
-                <img src="assets/images/punch-face.jpg" alt="Saitama face when punching" class="front">
-                <img src="assets/images/card-back.jpg" alt="card back face" class="back">
-            </div>
-        </section>
-        <!-- END === game playing area with grid of cards -->
-        <button id="restart-btn" class="restart-btn" aria-label="restart game">Go again!</button>
-        <!-- START === score area with timer, move counter and best score keeper -->
-        <section class="score-area">
-            <div class="score-display">
-                <div class="time-moves">
-                    <div class="score-display-item">
-                        <h4>Time:</h4><span class="counter" id="timer">00:00</span>
+        <div class="game-score-container flex">
+            <!-- START === game playing area with grid of cards -->
+            <section class="game-area flex">
+                <div class="card" data-image="angry">
+                    <img src="assets/images/angry.jpg" alt="Saitama angry face" class="front">
+                    <img src="assets/images/card-back.jpg" alt="card back face" class="back">
+                </div>
+                <div class="card" data-image="angry">
+                    <img src="assets/images/angry.jpg" alt="Saitama angry face" class="front">
+                    <img src="assets/images/card-back.jpg" alt="card back face" class="back">
+                </div>
+                <div class="card" data-image="bargain">
+                    <img src="assets/images/bargain-sale.jpg" alt="Saitama forgot bargain sale" class="front">
+                    <img src="assets/images/card-back.jpg" alt="card back face" class="back">
+                </div>
+                <div class="card" data-image="bargain">
+                    <img src="assets/images/bargain-sale.jpg" alt="Saitama forgot bargain sale" class="front">
+                    <img src="assets/images/card-back.jpg" alt="card back face" class="back">
+                </div>
+                <div class="card" data-image="confused">
+                    <img src="assets/images/confused-look.jpg" alt="Saitama looks confused" class="front">
+                    <img src="assets/images/card-back.jpg" alt="card back face" class="back">
+                </div>
+                <div class="card" data-image="confused">
+                    <img src="assets/images/confused-look.jpg" alt="Saitama looks confused" class="front">
+                    <img src="assets/images/card-back.jpg" alt="card back face" class="back">
+                </div>
+                <div class="card" data-image="earth">
+                    <img src="assets/images/earth.jpg" alt="Saitama views earth from moon" class="front">
+                    <img src="assets/images/card-back.jpg" alt="card back face" class="back">
+                </div>
+                <div class="card" data-image="earth">
+                    <img src="assets/images/earth.jpg" alt="Saitama views earth from moon" class="front">
+                    <img src="assets/images/card-back.jpg" alt="card back face" class="back">
+                </div>
+                <div class="card" data-image="naked">
+                    <img src="assets/images/naked.jpg" alt="Saitama naked" class="front">
+                    <img src="assets/images/card-back.jpg" alt="card back face" class="back">
+                </div>
+                <div class="card" data-image="naked">
+                    <img src="assets/images/naked.jpg" alt="Saitama naked" class="front">
+                    <img src="assets/images/card-back.jpg" alt="card back face" class="back">
+                </div>
+                <div class="card" data-image="punch">
+                    <img src="assets/images/punch-face.jpg" alt="Saitama face when punching" class="front">
+                    <img src="assets/images/card-back.jpg" alt="card back face" class="back">
+                </div>
+                <div class="card" data-image="punch">
+                    <img src="assets/images/punch-face.jpg" alt="Saitama face when punching" class="front">
+                    <img src="assets/images/card-back.jpg" alt="card back face" class="back">
+                </div>
+            </section>
+            <!-- END === game playing area with grid of cards -->
+            <button id="restart-btn" class="restart-btn" aria-label="restart game">Go again!</button>
+            <!-- START === score area with timer, move counter and best score keeper -->
+            <section class="score-area">
+                <div class="score-display">
+                    <div class="time-moves">
+                        <div class="score-display-item">
+                            <h4>Time:</h4><span class="counter" id="timer">00:00</span>
+                        </div>
+                        <div class="score-display-item">
+                            <h4>Moves:</h4><span class="counter" id="move-counter">0</span>
+                        </div>
                     </div>
-                    <div class="score-display-item">
-                        <h4>Moves:</h4><span class="counter" id="move-counter">0</span>
+                    <div class="scores">
+                        <h3 class="score-heading"><span class="player-name" id="player-name">Your</span> scores:</h3>
+                        <div class="score-display-item">
+                            <h4>Score:</h4><span class="counter" id="score">0</span>
+                        </div>
+                        <div class="score-display-item">
+                            <h4>Best score:</h4><span class="counter" id="best-score">0</span>
+                        </div>
                     </div>
                 </div>
-                <div class="scores">
-                    <h3 class="score-heading"><span class="player-name" id="player-name">Your</span> scores:</h3>
-                    <div class="score-display-item">
-                        <h4>Score:</h4><span class="counter" id="score">0</span>
-                    </div>
-                    <div class="score-display-item">
-                        <h4>Best score:</h4><span class="counter" id="best-score">0</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END === score area with timer, move counter and best score keeper -->
-
+            </section>
+            <!-- END === score area with timer, move counter and best score keeper -->
+        </div>
     </main>
     <!-- START === footer area with social links -->
     <footer>
