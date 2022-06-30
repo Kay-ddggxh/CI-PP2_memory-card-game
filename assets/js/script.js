@@ -223,7 +223,9 @@ function stopGame() {
 
     calcScore();
 
-    restartBtn.style.display = "block";
+    setTimeout(() => {
+        restartBtn.style.display = "block";
+    }, 1000);
 }
 
 // restart game
