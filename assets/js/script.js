@@ -70,26 +70,20 @@ function closeModal() {
 // calculate scores
 function calcScore() {
     let score = Math.round((10000 - numMoves) / secCounter);
-    // displays current score 
+    // display current score 
     scoreEl.innerHTML = score;
-    // stores all scores in bestScore array
+    // store all scores in bestScore array
     bestScores.push(score);
 
     getBestScore();
 }
 
-// gets and displays highest number from bestScores array
+// get and display highest number from bestScores array
 function getBestScore() {
-    let maxScore = bestScores[0];
-
-    for (let i = 0; i < bestScores.length; i++) {
-        if (maxScore < JSON.parse(localStorage.getItem(bestScores[i]))) {
-            maxScore = JSON.parse(localStorage.getItem(bestScores[i]));
-        }
-    }
+    // get highest value from bestScores array
+    let maxScore = Math.max(...bestScores);
 
     bestScoreEl.innerHTML = maxScore;
-
 }
 
 // timer function
@@ -251,11 +245,6 @@ function restartGame() {
     scoreEl.innerHTML = 0;
     startGame();
 }
-
-// add event listener to each item of cards array
-// for (let card of cards) {
-//     card.addEventListener('click', flipCard);
-// }
 
 // START ======== soundtrack on/off toggle =======
 
