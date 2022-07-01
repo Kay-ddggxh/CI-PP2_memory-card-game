@@ -53,7 +53,6 @@ main {
     display: flex;
 }
 
-.game-score-container {}
 
 /* modal styling */
 
@@ -169,7 +168,8 @@ h2 {
 .game-info {
     font-size: 1.2rem;
     line-height: 1.2;
-    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-bottom: 2.5rem;
 }
 
 .OPM-info {
@@ -188,8 +188,6 @@ h2 {
     margin-bottom: .5em;
 }
 
-.rules-info {}
-
 /* game styling */
 
 .game-area {
@@ -198,12 +196,13 @@ h2 {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
     perspective: 1000px;
 }
 
 .card {
     width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
+    height: calc(33.333% - 20px);
     margin: 5px;
     position: relative;
     transform: scale(1);
@@ -342,10 +341,41 @@ footer {
 
 /* media queries */
 
-@media (max-width: 1000px) {
+@media (max-width: 990px) {
+    /* game area styling */
+
+    .game-score-container {
+        flex-direction: column-reverse;
+    }
+
+    .game-area {
+        width: 80vw;
+        height: 80vh;
+        gap: 10px;
+        margin-top: 2rem;
+        margin-right: -40px;
+    }
+
     .card {
-        width: calc(33.333% - 10px);
-        height: calc(25% - 10px);
+        width: calc(25% - 40px);
+        height: calc(33.333% - 10px);
+
+    }
+
+    /* Score area styling */
+
+    .score-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .score-heading {
+        margin-top: 0;
+    }
+
+    .time-moves {
+        text-align: left;
     }
 }
 
@@ -356,17 +386,8 @@ footer {
         font-size: 14px;
     }
 
-    main {
-        /* flex-direction: column-reverse; */
-    }
-
     /* score area styling for medium screens */
 
-    .score-display {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
 
     .score-heading {
         margin-top: .5em;
@@ -374,23 +395,16 @@ footer {
 
     /* game area styling for medium screens */
 
-    .game-area {
-        width: 90vw;
-        height: 100vh;
-        gap: 10px;
-        margin-right: -40px;
-    }
 
     .card {
-        width: calc(33.333% - 50px);
-        height: calc(25% - 10px);
+        width: calc(33.333% - 60px);
+        height: calc(25% - 5px);
     }
-
 }
 
-/* small screens */
+/* small/medium screens */
 
-@media (max-width: 440px) {
+@media (max-width: 630px) {
 
     /* header styling for small screens */
 
@@ -410,7 +424,7 @@ footer {
     .game-area {
         width: 90vw;
         height: 100vh;
-        gap: 00px;
+        gap: 0px;
         margin-right: -40px;
     }
 
@@ -418,4 +432,33 @@ footer {
         width: calc(33.333% - 20px);
         height: calc(25% - 10px);
     }
+}
+
+/* small/phone screens */
+
+@media (max-width: 440px) {
+
+    /* card styling for phone screens */
+
+    .game-area {
+        width: 95vw;
+        height: 90vh;
+        margin: 0;
+    }
+
+    .card {
+        width: calc(33.333% - 20px);
+        height: calc(21% - 10px);
+    }
+
+    /* footer styling for phones */
+
+    footer {
+        margin-top: 0;
+    }
+
+    .social-icon {
+        font-size: 1.8rem;
+    }
+
 }
