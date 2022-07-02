@@ -192,7 +192,7 @@ h2 {
 
 .game-area {
     width: 100vw;
-    height: 80vh;
+    height: 50vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -389,7 +389,7 @@ footer {
 
 
     .score-heading {
-        margin-top: .5em;
+        margin-top: .5em 1em 0 1em;
     }
 
     /* game area styling for medium screens */
@@ -421,7 +421,6 @@ footer {
     /* game area styling for small screens */
 
     .game-area {
-        height: 100vh;
         gap: 0px;
     }
 
@@ -438,7 +437,6 @@ footer {
     /* card styling for phone screens */
 
     .game-area {
-        height: 75vh;
         margin: 0;
     }
 
