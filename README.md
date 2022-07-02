@@ -1,5 +1,7 @@
 # Beat Saitama! - Memory Card Game
 
+![Beat Saitama Responsive Mock-up](assets/images/readme-images/mock-up.JPG)
+
 Try and beat Saitama in this One Punch Man themed memory card game where the user's aim is to find all matching picture cards in as little time as possiple.
 
 Link to [live site](https://kathrin-ddggxh.github.io/CI-PP2_memory-card-game/)
@@ -16,7 +18,9 @@ Link to [live site](https://kathrin-ddggxh.github.io/CI-PP2_memory-card-game/)
 
 ## Design
 
-This game was designed with simple, intuitive functionality in mind. All features are self-explanetory and the game itself is rather common, thus the rules are well known. But even without initial understanding of the game, the user is able quickly figure out how to play it by trying out the site's different features.
+This game was designed with simple, intuitive functionality in mind. All features are self-explanetory and the game itself is rather common, thus the rules are well known and not discussed in to much detail on the actual site. Even without initial understanding of the game, the user is able to quickly figure out how to play it by trying out the site's different features.
+
+It is assumed that anybody coming across this game, i.e. searching for a One Punch Man card game is already aware of the protagonist the game is based on. For those who aren't, a link to the OPM wiki is found in a brief description of the character Saitama.
 
 ### Wireframes
 
@@ -26,7 +30,7 @@ The first [wireframes in Figma](https://www.figma.com/file/ZL7CYHIYrd1EM1fCKRbv8
 
 ### Font and Colour choices
 
-**Fonts:** Fonts were chosen to match the style of the One Punch Man manga as closely as possible. 
+**Fonts:** Fonts were chosen to match the style of the One Punch Man manga as closely as possible. The original fonts could not be sourced unfortunately.
 
 **Colours:** The main colour scheme follows the design of the anime, maintaining a dark mood based on the main red colour found in Saitama's (One Punch Man protagonist) cape, gloves and boots.
 
@@ -35,6 +39,82 @@ The first [wireframes in Figma](https://www.figma.com/file/ZL7CYHIYrd1EM1fCKRbv8
 The site contains all necessary features of a simple, functioning memory card game.
 
 ### Existing Features
+
+- **Modal with Start Game Button**
+    - Displays when site first loads
+    - Enables the user to enter a player name
+    - Game works even without entering a player name
+
+    ![modal](assets/images/readme-images/modal.JPG)
+
+- **Heading**
+    - Displays name of the site and sub-heading
+    - Located at the top of the site
+
+    ![header](assets/images/readme-images/heading.JPG)
+
+- **Sound Toggle**
+    - Located at the top right of the site
+    - Enables user to play and pause OPM theme tune
+    - Button changes according to play or pause functionality
+
+    ![play button](assets/images/readme-images/sound-play.JPG) ![pause button](assets/images/readme-images/sound-pause.JPG)
+
+- **Theme Introduction**
+    - Located below the heading
+    - Provides very brief introduction to the game's character Saitama from the manga and anime One Punch Man
+    - Provides link to OPM wiki page for more detailed information
+
+    ![intro section](assets/images/readme-images/OPM-info.JPG)
+
+- **Game Rules**
+    - Located between OPM info and game area
+    - Informs the user in rudimentary terms of how to play the game
+    - Informs the user of how the score is calculated
+
+    ![game rules](assets/images/readme-images/rules.JPG)
+
+- **Game Area**
+    - The main feature of the site
+    - A grid of 12 cards (6 matching pairs), depicting various scenes featuring Saitama 
+    - Cards appear face down at the start of the game
+    - On click, cards are turned face up. Matching pairs remain face up. Non-matching cards get flipped back face down.
+
+    ![game area](assets/images/readme-images/game-area.JPG)
+
+- **Timer and Moves Counter**
+    - On large screens to the right of the game area
+    - Above game area on small screens
+    - Timer starts as soon as user clicks Start Game button or restart button
+    - Timer stops when game is completed
+    - Moves counter increments by 1 every time the user clicks on a card
+
+    ![timer and moves counter](assets/images/readme-images/time-moves.JPG)
+
+- **Score Area**
+    - displays current score, calculated after each completion of the game
+    - stores and displays best score of every session
+
+    ![score area](assets/images/readme-images/score-area.JPG)
+
+- **Name Display**
+    - The player's name as entered in the modal's input field is displayed in the heading of the score area
+    - Should the user not enter a player name, the heading will default to "Your Scores"
+
+    ![player name](assets/images/readme-images/name-display.JPG)
+
+- **Restart Button**
+    - Appears on top of game area when the game is completed
+    - On click, resets the timer, move counter and current score counter to 0
+    
+    ![restart button](assets/images/readme-images/game-finished.JPG)
+
+- **Footer**
+    - Located at the bottom of the site
+    - Contains social media icons which link to site creater's Twitter and LinkedIn profile, as well as the open-source GitHub repo of the site
+
+    ![footer](assets/images/readme-images/footer.JPG)
+
 
 ### Possible Future Features
 
