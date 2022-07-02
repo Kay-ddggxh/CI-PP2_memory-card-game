@@ -347,11 +347,10 @@ footer {
 
     .game-score-container {
         flex-direction: column-reverse;
+        align-self: center;
     }
 
     .game-area {
-        width: 80vw;
-        height: 80vh;
         gap: 10px;
         margin-top: 2rem;
     }
@@ -366,7 +365,7 @@ footer {
 
     .score-area {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: flex-end;
     }
 
@@ -381,7 +380,7 @@ footer {
 
 /* medium screens */
 
-@media (max-width: 800px) {
+@media (max-width: 821px) {
     :root {
         font-size: 14px;
     }
@@ -439,7 +438,7 @@ footer {
     /* card styling for phone screens */
 
     .game-area {
-        height: 90vh;
+        height: 75vh;
         margin: 0;
     }
 
@@ -459,6 +458,3 @@ footer {
     }
 
 }
-
-/* 
-Because you are using flexbox you I would use justify-content:center and also make the width 100% not 100vw */
