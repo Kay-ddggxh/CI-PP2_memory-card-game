@@ -118,6 +118,18 @@ The site contains all necessary features of a simple, functioning memory card ga
 
 ### Possible Future Features
 
+- **Varying levels of difficulty**
+    - Enable the user to choose between different levels of difficulty
+    - The higher the skill level, the more cards in the grid
+
+- **Manga/Anime toggle**
+    - Enable the user to choose a theme
+    - Anime theme: the cards will depict coloured scenes from the OPM anime show
+    - Manga theme: the cards will depict b/w scenes from the manga
+
+- **Sound effects**
+    - Enables the user to toggle sound effects for flipping the cards and completing the game
+
 ## UX
 
 ### Site Goals
