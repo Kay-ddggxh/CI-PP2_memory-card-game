@@ -218,6 +218,28 @@ The game is intended to be played over the course of a few minutes. It does not 
 
 ### Browser Testing
 
+**Layout:** Testing layout and appearance of site for consistency throughout browsers.
+
+**Functionality:** 
+- Testing complete functionality of the game. This includes:
+    - Modal function (take player name and start game button)
+    - Soundtrack play/pause
+    - Game function 
+    - Timer
+    - Move Counter
+    - Score display
+    - Best score display
+
+- Ensuring all links, navigation and form submit functions as expected throughout browsers.
+
+| Browser     | Layout      | Functionality |
+| :---------: | :----------:| :-----------: |
+| Chrome      | ✔          | ✔             |
+| Edge        | ✔          | ✔             |
+| Firefox     | ✔          | ✔             |
+| Safari      | ✔          | ✔             |
+| IE          |deprecated by Microsoft, not tested|
+
 ### Manual Testing
 
 ### Testing User Stories
