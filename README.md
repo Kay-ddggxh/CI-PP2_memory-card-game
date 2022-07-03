@@ -147,7 +147,7 @@ The game is intended to be played over the course of a few minutes. It does not 
 - find a short and snappy blurb about the site's theme
 - see a link to a site providing me with more detailed information about the site's theme
 - find a visually appealing design that connects me with the theme of One Punch Man
-- be able to listen a short soundtrack that emphasises the One Punch Man theme (and puts me in a good mood because the tune is epic!)
+- be able to listen a short audio track that emphasises the One Punch Man theme (and puts me in a good mood because the tune is epic!)
 - read a brief and simple description of the game rules and score calculation
 - be able to play the game with simple click interaction
 - see the time that has elapsed while playing the game
@@ -155,8 +155,7 @@ The game is intended to be played over the course of a few minutes. It does not 
 - see my current score calculated after completing one round of the game
 - see my highest score displayed while playing more rounds
 - be able to restart the game without reloading the page
-- be able to find the site's creator on social media
-- see a link that takes me to the GitHub repo of the site's open-source code
+- be able to find the site's creator on social media and GitHub
 
 **As the site administrator I want to:**
 
@@ -248,6 +247,7 @@ The game is intended to be played over the course of a few minutes. It does not 
 | **Player name input where input value is null**   | When not entering a player name, the default value of "Your" appears in the score area heading after commencing the game   | Enter no player name and click "Start Game" button | Game commences and "Your score" is displayed in score area |
 | **Start Game Button**  | When clicked, the modal will close and the game starts with running timer and move counter  | Clicked Start Game button | Modal closes, timer starts and game can be played while number of moves are counted and displayed |
 | **Soundtrack player** | When the ▶ icon is clicked, audio starts to play and ⏸ icon displays. When the ⏸ icon is clicked, audio pauses and ▶ icon displays  | Click ▶ icon / Click ⏸ icon |  Audio plays and ⏸ icon displays. Audio pauses and ▶ icon displays |
+| **Wiki link** | When clicked, links to the One Punch Man wiki page in a new tab |  Click on link | OPM wiki page opens in new tab |
 | **Card flip** | When card is clicked, card flips over and shows image | Click card | Card flips and shows image |
 | **Card match** | Matching card pairs remain face up | Click cards until matching pair found | Matching pair remains face up |
 | **Card no-match** | Non-matching cards will flip back after 1.5 seconds | Click on non-matching cards | After 1.5 seconds, cards flip back face down |
@@ -260,12 +260,33 @@ The game is intended to be played over the course of a few minutes. It does not 
 | **Social link icons** | Social link icons open relevant websites in new tab when clicked| Click all individual icons | All respective sites open in new tab |
 
 
-
 ### Testing User Stories
+
+| Expectation (As a user, I want to...)  | Result (As a user, I...)    |
+| :---------------------------------: | :------------------------------:|
+| Be able to enter a player name that then displays on the site | can enter a player name at the start of the game and see it displayed in the score area |
+| Get a quick and thorough overview of the sites features and functionalities | can find my way around the site easily and quickly with all areas being layed out intuitively |
+| Find a short and snappy blurb about the site's theme | can read a few lines about site's theme without spending too much time on it |
+| See a link to a site providing me with more detailed information about the site's theme | can see and click on a link that takes me to the One Punch Man Wiki in a new tab |
+| Find a visually appealing design that connects me with the theme of One Punch Man | see a red and yellow colour scheme and fonts that are reminiscent of the One Punch Man anime |
+| Be able to listen a short audio track that emphasises the One Punch Man theme (and puts me in a good mood because the tune is epic!) | can play and pause the One Punch Man theme tune that reminds me of the anime (and makes me feel amazing and strong!) |
+| Read a brief and simple description of the game rules and score calculation | can read the game rules above the game area in very little time |
+| Be able to play the game with simple click interactions | play the game by simply clicking on the cards in the game area |
+| See the time that has elapsed while playing the game | see a running timer either above or to the right of the game area during the whole duration of one round |
+| See a move counter recording the amount of clicks I perform | see the move counter increment by 1 each time I click on a card |
+| See my current score calculated after completing one round of the game | see the score of my current round displayed after completing it |
+| See my highest score displayed while playing more rounds | can see my highest achieved score in the score area throughout the duration of my session |
+| Be able to restart the game without reloading the page | can click the restart button after completing a round and play the game again while retaining my highest score |
+| Be able to find the site's creator on social media and GitHub | can click on the social media icons in the footer and which link me the site creator's respective accounts in new tabs |
+
 
 ### Fixed bugs
 
+To view past fixed bugs, see [Validator Testing](#validator-testing)
+
 ### Unfixed bugs
+
+No unfixed bugs to date.
 
 ## Deployment
 
