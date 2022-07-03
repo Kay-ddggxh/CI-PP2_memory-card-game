@@ -191,8 +191,10 @@ h2 {
 /* game styling */
 
 .game-area {
-    width: 100vw;
-    height: 50vh;
+    /* width: 100vw;
+    height: 50vh; */
+    width: 120%;
+    height: 490px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -203,7 +205,9 @@ h2 {
 
 .card {
     width: calc(25% - 10px);
-    height: calc(33.333% - 20px);
+    height: calc(33.333% - 10px);
+    /* width: 145px;
+    height: 155px; */
     margin: 5px;
     position: relative;
     transform: scale(1);
@@ -351,7 +355,7 @@ footer {
     }
 
     .game-area {
-        gap: 10px;
+        width: 70vw;
         margin-top: 2rem;
     }
 
@@ -389,7 +393,7 @@ footer {
 
     .card {
         width: calc(33.333% - 60px);
-        height: calc(25% - 5px);
+        height: calc(28% - 5px);
     }
 }
 
@@ -420,6 +424,11 @@ footer {
         width: calc(33.333% - 20px);
         height: calc(25% - 10px);
     }
+
+    .front,
+    .back {
+        padding: 5px;
+    }
 }
 
 /* small/phone screens */
@@ -429,12 +438,14 @@ footer {
     /* card styling for phone screens */
 
     .game-area {
+        width: 90vw;
         margin: 0;
+        align-self: center;
     }
 
     .card {
         width: calc(33.333% - 20px);
-        height: calc(21% - 10px);
+        height: calc(23% - 10px);
     }
 
     /* footer styling for phones */
