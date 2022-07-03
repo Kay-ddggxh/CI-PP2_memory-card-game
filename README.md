@@ -198,7 +198,17 @@ The game is intended to be played over the course of a few minutes. It does not 
 
         **Solution** : remove `margin` property for `.score-heading` element on line 392 altogether - unnecessary!
 
+- Accessibility ([axe DevTools](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd))
+
+    - 1 critical issue: form elements needs labels
         
+        **Solution** : remove `p` element from modal and transfer its content to `label` element
+
+    - Colour contrast for 18 elements needs reviewing. However, it's passable. 
+
+
+
+
 ### Browser Testing
 
 ### Manual Testing
