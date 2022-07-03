@@ -206,7 +206,14 @@ The game is intended to be played over the course of a few minutes. It does not 
 
     - Colour contrast for 18 elements needs reviewing. However, it's passable. 
 
+- Performance, Accessibility, SEO, Best Practices (Lighthouse Chrome DevTools)
 
+    ![Lighthouse rating](assets/images/readme-images/lighthouse-result.JPG)
+
+- Browser Support ([CanIUse](https://caniuse.com/))
+
+    - `gap` property for Flexbox: according to caniuse.com this property has a global support of 89.28%
+    - `dialog` HTML element: according to caniuse.com this property has a global support of 87.75% and is supported in all major browsers
 
 
 ### Browser Testing
