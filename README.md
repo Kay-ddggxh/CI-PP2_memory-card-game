@@ -242,6 +242,25 @@ The game is intended to be played over the course of a few minutes. It does not 
 
 ### Manual Testing
 
+| Feature     | Expect      | Action        | Result |
+| :---------: | :----------:| :-----------: | :-----:|
+| **Player name input**   | When entering a player name, the name appears in the score area heading after commencing the game   | Enter player name and click "Start Game" button | Game commences and player name is displayed in score area |
+| **Player name input where input value is null**   | When not entering a player name, the default value of "Your" appears in the score area heading after commencing the game   | Enter no player name and click "Start Game" button | Game commences and "Your score" is displayed in score area |
+| **Start Game Button**  | When clicked, the modal will close and the game starts with running timer and move counter  | Clicked Start Game button | Modal closes, timer starts and game can be played while number of moves are counted and displayed |
+| **Soundtrack player** | When the ▶ icon is clicked, audio starts to play and ⏸ icon displays. When the ⏸ icon is clicked, audio pauses and ▶ icon displays  | Click ▶ icon / Click ⏸ icon |  Audio plays and ⏸ icon displays. Audio pauses and ▶ icon displays |
+| **Card flip** | When card is clicked, card flips over and shows image | Click card | Card flips and shows image |
+| **Card match** | Matching card pairs remain face up | Click cards until matching pair found | Matching pair remains face up |
+| **Card no-match** | Non-matching cards will flip back after 1.5 seconds | Click on non-matching cards | After 1.5 seconds, cards flip back face down |
+| **Timer** | Timer will start running on start of game / finish running on game completion | Start game / Complete game | Timer starts running / Timer stops running |
+| **Move counter** | Mover counter will imcrement by 1 each time a card is clicked | Click cards | Move counter increments by 1 each time |
+| **Score display** | Will show current score of most recent completed game (calculated through number of moves and time elapsed) | Complete game | Score displays - higher score shows the lower the number of moves and the less time elapsed |
+| **Best Score display** | Will show highest score achieved in one session | Complete several games with different scores | Best score displays highest score of current session |
+| **Game completion** | On finding all matching cards restart button will appear on top of game area | Complete game - find all matching cards | Restart button appears |
+| **Restart button** | When click, will reset timer, move counter and current score to 0 and start game again while retaining best score | Click restart button | Game starts again; timer, move counter start from 0; current score shows 0; best score displays highest score of current session |
+| **Social link icons** | Social link icons open relevant websites in new tab when clicked| Click all individual icons | All respective sites open in new tab |
+
+
+
 ### Testing User Stories
 
 ### Fixed bugs
