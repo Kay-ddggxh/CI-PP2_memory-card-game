@@ -37,7 +37,7 @@ body {
     /* in case bg-img can't load */
     background-image: linear-gradient(rgb(62 62 62), rgb(0 0 0 / 30%)),
         url(../images/background.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     resize: both;
 }
@@ -385,15 +385,7 @@ footer {
         font-size: 14px;
     }
 
-    /* score area styling for medium screens */
-
-
-    .score-heading {
-        margin-top: .5em 1em 0 1em;
-    }
-
     /* game area styling for medium screens */
-
 
     .card {
         width: calc(33.333% - 60px);

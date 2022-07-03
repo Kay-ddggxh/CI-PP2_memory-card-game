@@ -169,6 +169,36 @@ The game is intended to be played over the course of a few minutes. It does not 
 
 ### Validator Testing
 
+- HTML ([W3C validator](https://validator.w3.org/))
+
+    ![HTML validator result](assets/images/readme-images/HTML-validator-result.JPG)
+    - **Error** : Bad value `dialog` for attribute `method` on element `form`
+
+        In order to close the modal upon form submission, the value of `dialog` is actually required for the form element's `method` attribute in this case. 
+
+        Refer to [this tutorial](https://www.youtube.com/watch?v=TAB_v6yBXIE&t=300s) for further explanation.
+
+        The `dialog` HTML element and `::backdrop` property have only recently (15/03/2022) gained support from Safari and are now supported by all major browsers.
+
+    - **Warning** *Section lacks heading*:
+
+        A heading that appears visually for on the site above the game area would not suit the general layout and design.
+        
+        **Solution**: In order to improve accessibility, an `aria-label` attribute was added to the section.
+
+- CSS [Jigsaw](https://jigsaw.w3.org/css-validator/)
+
+    ![CSS validator result](assets/images/readme-images/CSS-validator-result.JPG)
+
+    - **Value Error** : background-repeat `none` is not a background-repeat value : `none`
+
+        **Solution** : change background-repeat value to `no-repeat`
+
+    - **Value Error** : margin-top Too many values or values are not recognized : `0.5em 1em 0 1em`
+
+        **Solution** : remove `margin` property for `.score-heading` element on line 392 altogether - unnecessary!
+
+        
 ### Browser Testing
 
 ### Manual Testing
