@@ -134,7 +134,7 @@ The site contains all necessary features of a simple, functioning memory card ga
 
 ### Site Goals
 
-The goal of the site is to provide the fan community of One Punch Man with an enterning yet not too complicated game, featuring images of the anime series.
+The goal of the site is to provide the fan community of One Punch Man with an entertaining yet not too complicated game, featuring images of the anime series.
 
 The game is intended to be played over the course of a few minutes. It does not take up too much of the user's time either by playing or learning the rules and functionality.
 
@@ -142,7 +142,27 @@ The game is intended to be played over the course of a few minutes. It does not 
 
 **As a site visitor I want to:**
 
+- be able to enter a player name that then displays on the site
+- get a quick and thorough overview of the sites features and functionalities
+- find a short and snappy blurb about the site's theme
+- see a link to a site providing me with more detailed information about the site's theme
+- find a visually appealing design that connects me with the theme of One Punch Man
+- be able to listen a short soundtrack that emphasises the One Punch Man theme (and puts me in a good mood because the tune is epic!)
+- read a brief and simple description of the game rules and score calculation
+- be able to play the game with simple click interaction
+- see the time that has elapsed while playing the game
+- see a move counter recording the amount of clicks I perform
+- see my current score calculated after completing one round of the game
+- see my highest score displayed while playing more rounds
+- be able to restart the game without reloading the page
+- be able to find the site's creator on social media
+- see a link that takes me to the GitHub repo of the site's open-source code
+
 **As the site administrator I want to:**
+
+- be able to make modifications to the game (see [future features](#possible-future-features))
+- provide the user with social media contacts
+- offer the user the chance to explore the code for the site
 
 
 ## Testing
@@ -224,9 +244,9 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
 ### Content
 **Fonts** 
 
-*"Bangers":* [Google fonts](https://fonts.google.com/)
+*Bangers:* [Google fonts](https://fonts.google.com/)
 
-*"wild_world":* [Abdullah Mosad](https://befonts.com/wild-world-font.html) (License: Free for Commercial Use); converted into web font kit with [Fontsquirrel](https://www.fontsquirrel.com/tools/webfont-generator) 
+*wild_world:* [Abdullah Mosad](https://befonts.com/wild-world-font.html) (License: Free for Commercial Use); converted into web font kit with [Fontsquirrel](https://www.fontsquirrel.com/tools/webfont-generator) 
 
 
 **Icons** 
