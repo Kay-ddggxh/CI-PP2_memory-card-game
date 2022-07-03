@@ -9,12 +9,31 @@ Link to [live site](https://kathrin-ddggxh.github.io/CI-PP2_memory-card-game/)
 ## Index - Table of Contents
 
 - [Design](#design)
+    - [Wireframes](#wireframes)
+    - [Font and Colours](#font-and-colour-choices)
 
 - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Future Features](#possible-future-features)
 
 - [UX](#ux)
+    - [Site Goals](#site-goals)
+    - [User Stories](#user-stories)
+
+- [Testing](#testing)
+    - [Validator Testing](#validator-testing)
+    - [Browser Testing](#browser-testing)
+    - [Manual Testing](#manual-testing)
+    - [Testing User Stories](#testing-user-stories)
+    - [Fixed Bugs](#fixed-bugs)
+    - [Unfixed Bugs](#unfixed-bugs)
+
+- [Deployment](#deployment)
 
 - [Credits](#credits)
+    - [Media](#media)
+    - [Code](#code)
+    - [Content](#content)
 
 ## Design
 
@@ -332,6 +351,8 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
 - [Memory Card Game](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
 
 - [Timer functionality](https://daily-dev-tips.com/posts/vanilla-javascript-timer/)
+
+- [Modal](https://www.youtube.com/watch?v=TAB_v6yBXIE&ab_channel=KevinPowell)
 
 - [Soundtrack toggle](https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link)
 
