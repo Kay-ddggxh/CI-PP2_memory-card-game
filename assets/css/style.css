@@ -247,19 +247,16 @@ h2 {
 
 .restart-btn {
     font-family: 'Bangers', cursive;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 2px;
     border: none;
     border-radius: 4px;
     max-width: fit-content;
-    margin: 1em auto;
+    margin: 0 auto;
     padding: .5em .8em;
     color: #980000;
     background-color: #EAC066;
     box-shadow: inset 0px 0px 10px #980000;
-    position: absolute;
-    top: 100vh;
-    left: 30vw;
     display: none;
 }
 
@@ -286,6 +283,7 @@ h4 {
     justify-content: center;
     text-align: right;
     font-size: 2rem;
+    flex-wrap: wrap;
 }
 
 .score-heading {

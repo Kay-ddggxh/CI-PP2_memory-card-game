@@ -123,10 +123,10 @@ The site contains all necessary features of a simple, functioning memory card ga
     ![player name](assets/images/readme-images/name-display.JPG)
 
 - **Restart Button**
-    - Appears on top of game area when the game is completed
+    - Appears below the score area when the game is completed
     - On click, resets the timer, move counter and current score counter to 0
     
-    ![restart button](assets/images/readme-images/game-finished.JPG)
+    ![restart button](assets/images/readme-images/restart-btn.JPG)
 
 - **Footer**
     - Located at the bottom of the site
@@ -275,7 +275,7 @@ The game is intended to be played over the course of a few minutes. It does not 
 | **Score display** | Will show current score of most recent completed game (calculated through number of moves and time elapsed) | Complete game | Score displays - higher score shows the lower the number of moves and the less time elapsed |
 | **Best Score display** | Will show highest score achieved in one session | Complete several games with different scores | Best score displays highest score of current session |
 | **Game completion** | On finding all matching cards restart button will appear on top of game area | Complete game - find all matching cards | Restart button appears |
-| **Restart button** | When click, will reset timer, move counter and current score to 0 and start game again while retaining best score | Click restart button | Game starts again; timer, move counter start from 0; current score shows 0; best score displays highest score of current session |
+| **Restart button** | When clicked, will reset timer, move counter and current score to 0 and start game again while retaining best score | Click restart button | Game starts again; timer, move counter start from 0; current score shows 0; best score displays highest score of current session |
 | **Social link icons** | Social link icons open relevant websites in new tab when clicked| Click all individual icons | All respective sites open in new tab |
 
 
