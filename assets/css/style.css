@@ -191,12 +191,9 @@ h2 {
 /* game styling */
 
 .game-area {
-    /* width: 100vw;
-    height: 50vh; */
     width: 120%;
     height: 490px;
     margin: auto;
-    display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
@@ -206,8 +203,6 @@ h2 {
 .card {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
-    /* width: 145px;
-    height: 155px; */
     margin: 5px;
     position: relative;
     transform: scale(1);
@@ -362,7 +357,6 @@ footer {
     .card {
         width: calc(25% - 40px);
         height: calc(33.333% - 10px);
-
     }
 
     /* Score area styling */
@@ -444,7 +438,6 @@ footer {
     }
 
     .card {
-        width: calc(33.333% - 20px);
         height: calc(23% - 10px);
     }
 
