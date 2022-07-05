@@ -187,8 +187,8 @@ function shuffle() {
     for (let card of cards) {
         let ramdomPos = Math.floor(Math.random() * 12);
         card.style.order = ramdomPos;
-    };
-};
+    }
+}
 
 // render entire game
 function startGame() {
@@ -261,18 +261,20 @@ soundtrackEl.onplaying = function () {
     isPlaying = true;
     playIcon.style.display = "none";
     pauseIcon.style.display = "inline";
-}
+};
+
 soundtrackEl.onpause = function () {
     isPlaying = false;
     playIcon.style.display = "inline";
     pauseIcon.style.display = "none";
-}
+};
+
 audioToggle.addEventListener("click", togglePlay);
 
 // END ======== soundtrack on/off toggle =======
 
 // modal button starts the game and timer
-modalStartBtn.addEventListener("click", startGame)
+modalStartBtn.addEventListener("click", startGame);
 
 // restart game button restarts game without reloading the page
-restartBtn.addEventListener("click", restartGame)
+restartBtn.addEventListener("click", restartGame);
