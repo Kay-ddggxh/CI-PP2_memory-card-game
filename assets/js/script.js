@@ -54,7 +54,9 @@ let bestScores = [];
 
 
 
-// ========= modal functionalitiy ==============
+/* MODAL FUNCTIONALITY
+    source: https://www.youtube.com/watch?v=TAB_v6yBXIE&ab_channel=KevinPowell
+*/
 
 function openModal() {
     modal.showModal();
@@ -65,7 +67,7 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-// ======== End - modal functionality ===========
+// End - modal functionality 
 
 // calculate scores
 function calcScore() {
@@ -86,7 +88,10 @@ function getBestScore() {
     bestScoreEl.innerHTML = maxScore;
 }
 
-// timer function
+/* TIMER FUNCTIONALITY
+    source: https://daily-dev-tips.com/posts/vanilla-javascript-timer/
+*/
+
 function startTimer() {
     // clear existing timer
     clearInterval(timerInterval);
@@ -114,6 +119,12 @@ function startTimer() {
         }
     }, 1000);
 }
+
+// END - Timer
+
+/* MEMORY GAME FUNCTIONALITY
+    source: https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae
+*/
 
 function flipCard() {
     // count moves
@@ -248,7 +259,9 @@ function restartGame() {
     startGame();
 }
 
-// START ======== soundtrack on/off toggle =======
+/* SOUNDTRACK ON/OFF TOGGLE
+    source: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
+*/
 
 let isPlaying = false;
 pauseIcon.style.display = "none";
@@ -275,7 +288,7 @@ soundtrackEl.onpause = function () {
 
 audioToggle.addEventListener("click", togglePlay);
 
-// END ======== soundtrack on/off toggle =======
+// END - soundtrack on/off toggle 
 
 // modal button starts the game and timer
 modalStartBtn.addEventListener("click", startGame);

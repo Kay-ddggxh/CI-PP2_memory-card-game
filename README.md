@@ -368,7 +368,6 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
 
 - [JavaScript destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
-- [JavaScript IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
 #### Styling effects and animations
 - [CSS perspective property](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective)
