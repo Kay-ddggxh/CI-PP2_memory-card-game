@@ -1,4 +1,4 @@
-/* Saitama's custome colours */
+/* Saitama's costume colours */
 /* #EAC066 yellow */
 /* #973F2F red */
 
@@ -150,7 +150,12 @@ h2 {
     background-color: transparent;
     border: none;
     color: #fff;
-    padding: .5em 0 0 1em;
+    margin: .5em 0 0 1em;
+}
+
+.sound-btn:active,
+.sound-btn:focus {
+    outline: none;
 }
 
 .play-icon {

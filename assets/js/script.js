@@ -254,7 +254,11 @@ let isPlaying = false;
 pauseIcon.style.display = "none";
 
 function togglePlay() {
-    isPlaying ? soundtrackEl.pause() : soundtrackEl.play();
+    if (isPlaying) {
+        soundtrackEl.pause();
+    } else {
+        soundtrackEl.play();
+    }
 }
 
 soundtrackEl.onplaying = function () {
