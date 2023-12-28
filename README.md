@@ -4,7 +4,7 @@
 
 Try and beat Saitama in this One Punch Man themed memory card game where the user's aim is to find all matching picture cards in as little time as possiple.
 
-Link to [live site](https://kathrin-ddggxh.github.io/CI-PP2_memory-card-game/)
+Link to [live site](https://kay-ddggxh.github.io/CI-PP2_memory-card-game/)
 
 ## Index - Table of Contents
 
